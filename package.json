@@ -1,0 +1,23 @@
+{
+    "name": "playlists-memorized",
+    "version": "1.0.0",
+    "author": "Gleb Varenov <kuzzdra@gmail.com>",
+    "private": true,
+    "license": "MIT",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "@types/node": "^12.6.8",
+        "antd": "^3.20.6",
+        "next": "^9.0.2",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-redux": "^7.1.0",
+        "redux": "^4.0.4",
+        "redux-devtools": "^3.5.0",
+        "typescript": "^3.5.3"
+    }
+}
