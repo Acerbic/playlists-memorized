@@ -1,0 +1,16 @@
+type User {
+  id: ID! @id
+  name: String!
+}
+
+type Playlist {
+  id: ID! @id
+  name: String
+  items: [Listitem!]!
+  createdAt: DateTime! @createdAt
+}
+
+type Listitem @embedded {
+  name: String
+  url: String!
+}

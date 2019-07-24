@@ -1,0 +1,7 @@
+projects:
+  api-server:
+    schemaPath: schema.graphql
+  prisma-database:
+    schemaPath: generated/prisma.graphql
+    extensions:
+      prisma: prisma/prisma.yml
