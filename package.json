@@ -1,5 +1,6 @@
 {
     "name": "playlists-memorized",
+    "description": "Keep track of your favorite playlists, don't let 'em decay",
     "version": "1.0.0",
     "author": "Gleb Varenov <kuzzdra@gmail.com>",
     "private": true,
@@ -7,11 +8,16 @@
     "scripts": {
         "dev": "next",
         "build": "next build",
-        "start": "next start"
+        "start": "next start",
+        "analyze": "cross-env BUNDLE_ANALYZE=both next build",
+        "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+        "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
     },
     "dependencies": {
         "@types/node": "^12.6.8",
+        "@zeit/next-bundle-analyzer": "^0.1.2",
         "antd": "^3.20.6",
+        "cross-env": "^5.2.0",
         "next": "^9.0.2",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
